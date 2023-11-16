@@ -1,5 +1,5 @@
-import Buttons from "./components/Buttons";
-import Table from "./components/Table";
+import Buttons from "./components/Buttons.jsx";
+import Table from "./components/Table.jsx";
 import Banner from "./components/Banner.jsx";
 import { useState } from "react";
 import satData from "./components/satData.jsx";
