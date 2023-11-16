@@ -1,4 +1,18 @@
+import styles from "./styling.css";
+
 const Table = ({ sat }) => {
+
+  const tableBody = sat.map((id, data) => {
+    return (
+    <tr key={id}>
+      <td>{data.name}</td>
+      <td>{data.type}</td>
+      <td>{data.launchDate}</td>
+      <td>{data.operational ? "Active" : "Inactive"}</td>
+    </tr>
+    )
+  })
+
   return (
     <table>
     <thead>
@@ -10,9 +24,8 @@ const Table = ({ sat }) => {
      </tr>
      </thead>
      <tbody>
-     <tr>
-       <td>Row Data TBD</td>
-     </tr>
+      {tableBody}
+      
      </tbody>
    </table>
   );
