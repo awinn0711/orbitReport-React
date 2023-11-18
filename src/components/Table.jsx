@@ -1,10 +1,11 @@
-import styles from "./styling.css";
+import "./styling.css";
+import satData from "./satData.jsx";
 
 const Table = ({ sat }) => {
 
-  const tableBody = sat.map((id, data) => {
+  const tableBody = sat.map((data) => {
     return (
-    <tr key={id}>
+    <tr key={data.id}>
       <td>{data.name}</td>
       <td>{data.type}</td>
       <td>{data.launchDate}</td>
